@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatora - Modern Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="welcome-navbar">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <i class="fas fa-comments"></i>
+                <span>Chatora</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section active">
+        <div class="chat-container">
+            <div class="chat-sidebar">
+                <div class="sidebar-header">
+                    <h2>Chatora</h2>
+                    <button id="new-chat-btn" class="new-chat-btn">
+                        <i class="fas fa-plus"></i> New Chat
+                    </button>
+                </div>
+                <div class="chat-list" id="chat-list">
+                    <!-- Chat history will be populated here -->
+                </div>
+            </div>
+            
+            <div class="chat-main">
+                <div class="chat-header">
+                    <div class="chat-title">
+                        <h1>Welcome to Chatora</h1>
+                        <p>Start a new conversation or select an existing chat</p>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will be populated here -->
+                </div>
+                
+                <div class="chat-input-container">
+                    <form id="message-form">
+                        <textarea 
+                            id="message-input" 
+                            placeholder="Type your message here..."
+                            rows="1"
+                        ></textarea>
+                        <button type="submit" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-container">
+            <h2>About Chatora</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Chatora is a modern, user-friendly chat application designed to connect people seamlessly. Our platform offers:</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Real-time messaging</li>
+                        <li><i class="fas fa-check"></i> Beautiful and intuitive interface</li>
+                        <li><i class="fas fa-check"></i> Secure communication</li>
+                        <li><i class="fas fa-check"></i> Cross-platform compatibility</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@chatora.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Chat Street, Digital City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
